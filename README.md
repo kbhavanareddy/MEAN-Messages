@@ -1,2 +1,2 @@
 # MEAN-Messages
-using Angular 1.5
+Created Project using Angular 1.5, displaying messages of particular user.
