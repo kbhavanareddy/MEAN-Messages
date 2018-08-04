@@ -74,27 +74,15 @@ app.config(function ($routeProvider) {
 
 
 app.controller("indexController", function ($scope) {
-
-   
-
     $scope.$on('login', (event, obj) => {
-
         $scope.login = true;
         
     });
-
-
     $scope.$on('logout', (event, obj) => {
         $scope.login = false;
        
     });
-
-    
-
-
 });
-
-
 
 
 //registration-
@@ -120,9 +108,6 @@ app.controller('registrationController', function ($scope, $http, $location, $ro
     };
 
 });
-
-
-
 
 
 //login-
@@ -154,9 +139,6 @@ app.controller('loginController', function ($scope, $http, $location, $rootScope
     };
 
 });
-
-
-
 
 
 //profile
@@ -208,9 +190,6 @@ app.controller('profileController', function ($scope, $http, $location, $rootSco
 });
 
 
-
-
-
 //messages--
 
 app.controller('messagesController', function ($scope, $http,$location) {
@@ -241,8 +220,6 @@ app.controller('messagesController', function ($scope, $http,$location) {
         }
 
 });
-
-
 
 //details of message-
 
@@ -296,8 +273,6 @@ $scope.favourite=function(event){
   }
 
 
-
-
     //delete message
     $scope.delete = function (event) {
         var id = event.target.id;
@@ -315,8 +290,8 @@ $scope.favourite=function(event){
 
     }
 
+    
     //reply
-
     $scope.replyOn = false;
     $scope.reply = function (event) {
 
@@ -376,8 +351,6 @@ app.controller('logoutController', function ($location) {
 
 
 //using service-
-
-
 app.factory('authService',function($location){
 
     return {
