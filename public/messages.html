@@ -1,0 +1,16 @@
+
+<div class="container">
+
+<h1>MESSAGES OF USER</h1>
+
+<div class="list-group" ng-repeat="message in messages">
+
+    <h4>sender:{{message.sender}}</h4>
+    <p>Title:{{message.title}}</p>
+    <p>Description:{{message.description}}</p>
+    <button id={{message._id}} class="btn btn-primary" ng-click="details($event)"> DetailS</button> 
+</br>
+    
+</div>
+
+</div>

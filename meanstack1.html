@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <title>MESSAGES APPLICATION</title>
+
+</head>
+    <body >
+        <div ng-app="myapp" ng-controller="indexController">
+            <nav class="navbar navbar-default"> 
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <div>
+                            <ul class="nav navbar-nav">
+                                <li><a href="#/login" ng-if="login">LOGIN</a></li>
+                                <li><a href="#/registration" ng-if="login">REGISTRATION</a></li>
+                                <li><a href="#/profile" ng-if="!login">PROFILE</a></li>
+                                <li><a href="#/messages" ng-if="!login">MESSAGES</a></li>
+                                <li><a href="#/logout" ng-if="!login">LOGOUT</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            
+            <div ng-view="">
+
+            </div>
+
+        </div>
+
+        <script src="https://code.angularjs.org/1.5.5/angular.min.js"></script>
+        <script src="https://code.angularjs.org/1.5.5/angular-route.min.js"></script>
+        <script src="meanstack1.js"></script>
+    
+        
+    </body>
+</html>
